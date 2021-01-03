@@ -8,7 +8,6 @@ import React, { Component } from 'react';
  */
 
 class Counter extends Component {
-
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -18,13 +17,13 @@ class Counter extends Component {
 
 	increase() {
 		this.setState({
-			num: this.state.num + 1
+			num: Math.min(this.state.num + 1, 20)
 		});
 	}
 
 	decrease() {
 		this.setState({
-			num: this.state.num - 1
+			num: Math.max(this.state.num - 1, 0)
 		});
 	}
 

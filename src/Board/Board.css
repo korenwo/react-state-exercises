@@ -9,3 +9,7 @@
     height: 60px;
     border: 3px solid #6495ee;
 }
+
+.board-selected {
+    border-color: red;
+}
